@@ -1,0 +1,124 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Header Styles */
+header {
+    background: #34495e;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    padding: 8px 15px;
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+header .nav-links a:hover {
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+    background: linear-gradient(to right, #3498db, #9b59b6);
+}
+
+.signup-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.signup-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.signup-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-container input {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.signup-container input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.signup-container button {
+    background: #e74c3c;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup-container button:hover {
+    background: #c0392b;
+}
+
+.signup-container .login-redirect {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+.signup-container .login-redirect a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container .login-redirect a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #34495e;
+    color: #fff;
+    padding: 10px;
+    font-size: 0.9rem;
+}

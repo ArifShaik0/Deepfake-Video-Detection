@@ -1,0 +1,131 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #74ebd5 10%, #ACB6E5 100%);
+    flex-direction: column; /* Added to stack content vertically */
+}
+
+/* Header */
+header {
+    width: 100%;
+    background-color: transparent;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 2cm; /* Positions header at the top */
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Main Section - Centered Form */
+main {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    z-index: 1; /* Ensures the login form stays above the header */
+}
+
+.flash-messages {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 5px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 2rem;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    border: 1px solid #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Signup Link and Bottom Text */
+p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input[type="email"], input[type="password"], button {
+        font-size: 14px;
+    }
+}

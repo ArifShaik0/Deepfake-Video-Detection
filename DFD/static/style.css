@@ -1,0 +1,96 @@
+/* General body settings for the result page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #18baf0;
+    color: #e0e0e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Flexbox container for centering the result content */
+.wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Container for the result content */
+.result-container {
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    border: 1px solid #333;
+}
+
+/* Heading for the result */
+h1.result-title {
+    color: #ff6e7f;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* Result message styling */
+p.result-message {
+    font-size: 24px;
+    color: #f0f0f0;
+    margin-bottom: 30px;
+}
+
+/* Button styling */
+.button-back {
+    background-color: #ff6e7f;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(255, 110, 127, 0.6);
+}
+
+.button-back:hover {
+    background-color: #ff8a80;
+    box-shadow: 0 6px 20px rgba(255, 110, 127, 0.9);
+}
+
+/* Container for main content */
+.container {
+    max-width: 600px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+    text-align: center;
+    border: 1px solid #333;
+}
+
+
+/* Footer pushed to the bottom */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #1e1e1e;
+    color: #888;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    color: #ff6e7f;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff8a80;
+}

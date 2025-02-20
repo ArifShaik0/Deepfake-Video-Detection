@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeepFake Detection</title>
+    <link rel="stylesheet" href="static\index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">AuthenticEyes</div>
+            <div class="nav-links">
+                <a href="{{ url_for('login') }}">Login</a>
+                <a href="{{ url_for('signup') }}">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to DeepFake Detection</h1>
+                <p>Detect and combat digital forgeries with our state-of-the-art AI-powered DeepFake detection system.</p>
+                <a href="{{ url_for('login') }}" class="cta-button">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="static\dfd.jpg" alt="DeepFake Detection Illustration">
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-list">
+                <div class="feature">
+                    <h3>Accurate Detection</h3>
+                    <p>Leverage cutting-edge AI models to identify DeepFake videos with high precision.</p>
+                </div>
+                <div class="feature">
+                    <h3>Easy to Use</h3>
+                    <p>Our user-friendly interface ensures a seamless experience for everyone.</p>
+                </div>
+                <div class="feature">
+                    <h3>Real-Time Results</h3>
+                    <p>Upload a video and get instant results in seconds.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>Ready to get started?</h2>
+            <p>Sign up today and ensure the integrity of digital media.</p>
+            <a href="{{ url_for('signup') }}" class="cta-button">Sign Up Now</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DeepFake Detection. All rights reserved.</p>
+    </footer>
+</body>
+</html>

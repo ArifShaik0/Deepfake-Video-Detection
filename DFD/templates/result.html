@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="result-container">
+            <h1 class="result-title">Video Classification Result</h1>
+            <p class="result-message">The video is classified as: {{ result }}</p>
+            <a href="{{ url_for('home') }}">
+                <button class="button-back">Upload Another Video</button>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>Developed for Deepfake Detection Project | <a href="https://authenticeyes.com">AuthenticEyes</a></p>
+    </footer>
+</body>
+</html>

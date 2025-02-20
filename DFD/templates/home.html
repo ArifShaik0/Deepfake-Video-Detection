@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - DeepFake Detection</title>
+    <link rel="stylesheet" href="static\home.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>DeepFake Video Detection</h1>
+            <p>Ensuring authenticity in digital media</p>
+        </div>
+        <!-- Home Button -->
+        <div class="home-button">
+            <a href="{{ url_for('index') }}">Home</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Upload Section -->
+        <section class="upload-section">
+            <h2>Upload a Video for DeepFake Detection</h2>
+            <form class="upload-form" action="{{ url_for('upload_video') }}" method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept="video/*" required>
+                <button type="submit">Upload and Verify</button>
+            </form>
+        </section>
+
+        <!-- Information Section -->
+        <section class="info-section">
+            <div class="card">
+                <h2>About DeepFake Detection</h2>
+                <p>
+                    DeepFake technology poses significant challenges in media authenticity. Our platform uses 
+                    advanced AI techniques to detect DeepFake videos and protect against misinformation.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Advantages</h3>
+                <ul>
+                    <li>Prevents the spread of fake media</li>
+                    <li>Improves trust in video content</li>
+                </ul>
+            </div>
+            <div class="card" "card3">
+                <h3>Applications</h3>
+                <ul>
+                    <li>Media verification for news outlets</li>
+                    <li>Security forensics in legal investigations</li>
+                    <li>Ensuring authenticity in entertainment and social media</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 DeepFake Detection. All rights reserved.</p>
+    </footer>
+</body>
+</html>
